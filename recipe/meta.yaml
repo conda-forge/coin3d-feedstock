@@ -1,7 +1,7 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.0" %}
-{% set commit = "8e8337f61b05" %}
-{% set sha256 = "8319cfa699afac0e5f19054222c25a7ad655f018f7c3c7b53f626e7b167cb08e" %}
+{% set commit = "6f54f1602475" %}
+{% set sha256 = "a31f290728eb548f30fde481456d36d3a99a0705a48085d23c30dc3c60b60c39" %}
 
 package:
     name: {{ name }}
@@ -16,7 +16,7 @@ source:
         - include.patch  # [unix]
 
 build:
-    number: 4
+    number: 5
     skip: true  # [win and py<35]
 
 requirements:
