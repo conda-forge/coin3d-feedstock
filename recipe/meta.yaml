@@ -11,9 +11,8 @@ source:
     fn: {{ name }}.tar.gz
     url: https://bitbucket.org/Coin3D/coin/get/{{ commit }}.tar.gz
     sha256: {{ sha256 }}
-
-    # patches:
-    #     - include.patch  # [unix]
+    patches:
+        - no_cpack.patch
 
 build:
     number: 1005
