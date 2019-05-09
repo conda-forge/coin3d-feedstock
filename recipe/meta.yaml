@@ -1,7 +1,7 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.0" %}
-{% set commit = "8e8337f61b05" %}
-{% set sha256 = "8319cfa699afac0e5f19054222c25a7ad655f018f7c3c7b53f626e7b167cb08e" %}
+{% set commit = "30674a9" %}
+{% set sha256 = "2f1c9d7a14fd0be7119100673c9292014e637774277bab4550e6f78f30a205de" %}
 
 package:
     name: {{ name }}
@@ -12,12 +12,11 @@ source:
     url: https://bitbucket.org/Coin3D/coin/get/{{ commit }}.tar.gz
     sha256: {{ sha256 }}
 
-    patches:
-        - include.patch  # [unix]
+    # patches:
+    #     - include.patch  # [unix]
 
 build:
-    number: 1004
-    skip: true  # [win and py<35]
+    number: 1005
 
 requirements:
     build:
@@ -31,12 +30,14 @@ requirements:
         - xorg-libxt  # [linux]
         - xorg-libxmu  # [linux]
         - xorg-libxi  # [linux]
+        - expat
     run:
         - boost-cpp
         - libglu  # [linux]
         - xorg-libxt  # [linux]
         - xorg-libxmu  # [linux]
         - xorg-libxi  # [linux]
+        - expat
 
 test:
     requires:
