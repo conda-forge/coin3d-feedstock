@@ -24,7 +24,7 @@ requirements:
         - {{ cdt('libxdamage') }}  # [linux]
         - {{ cdt('libselinux') }}  # [linux]
         - {{ cdt('libXxf86vm') }}  # [linux]
-        - {{ cdt('libglapi') }}  # [linux]
+        - {{ cdt('mesa-libglapi') }}  # [linux]
         - cmake
         - ninja
     host:
