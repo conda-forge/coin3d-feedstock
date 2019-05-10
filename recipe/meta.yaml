@@ -12,7 +12,7 @@ source:
     url: https://bitbucket.org/Coin3D/coin/get/{{ commit }}.tar.gz
     sha256: {{ sha256 }}
     patches:
-        - no_cpack.patch
+        - stop_the_cross_plattform_ignorance.patch
 
 build:
     number: 1005
