@@ -21,6 +21,10 @@ requirements:
     build:
         - {{ compiler('cxx') }}
         - {{ cdt('mesa-libgl-devel') }}  # [linux]
+        - {{ cdt('libxdamage') }}  # [linux]
+        - {{ cdt('libselinux') }}  # [linux]
+        - {{ cdt('libXxf86vm') }}  # [linux]
+        - {{ cdt('libglapi') }}  # [linux]
         - cmake
         - ninja
     host:
