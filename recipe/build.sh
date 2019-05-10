@@ -12,6 +12,7 @@ cmake -G "Ninja" \
       -D SIMAGE_RUNTIME_LINKING:BOOL=ON \
       -D USE_EXTERNAL_EXPAT:BOOL=ON \
       -D COIN_BUILD_DOCUMENTATION:BOOL=OFF \
+      -D COIN_BUILD_MAC_FRAMEWORK:BOOL=OFF \
       ..
 
 ninja install
