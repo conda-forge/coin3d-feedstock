@@ -50,13 +50,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2008cxx_compilervs2008</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=168&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coin3d-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>win_c_compilervs2015cxx_compilervs2015</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=168&branchName=master">
