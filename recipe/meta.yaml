@@ -15,7 +15,7 @@ source:
         - stop_the_cross_plattform_ignorance.patch
 
 build:
-    number: 1005
+    number: 1006
     skip: true  # [win and py<35]
 
 requirements:
