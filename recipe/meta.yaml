@@ -1,7 +1,7 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.0" %}
-{% set commit = "30674a9" %}
-{% set sha256 = "2f1c9d7a14fd0be7119100673c9292014e637774277bab4550e6f78f30a205de" %}
+{% set commit = "99d4d98" %}
+{% set sha256 = "1fdfb04a40dfaba5f98db100a8142371557912cd348b5d0770dec9e2963810ce" %}
 
 package:
     name: {{ name }}
@@ -9,10 +9,11 @@ package:
 
 source:
     fn: {{ name }}.tar.gz
-    url: https://bitbucket.org/Coin3D/coin/get/{{ commit }}.tar.gz
+    url: https://bitbucket.org/VolkerEnderlein/coin/get/{{ commit }}.tar.gz
+    # url: https://bitbucket.org/Coin3D/coin/get/{{ commit }}.tar.gz
     sha256: {{ sha256 }}
     patches:
-        - stop_the_cross_plattform_ignorance.patch
+        - cmake.patch
 
 build:
     number: 1006

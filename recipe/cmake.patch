@@ -1,0 +1,20 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 637a887..bb2bab5 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -87,6 +87,7 @@ option(SIMAGE_RUNTIME_LINKING       "Enable simage runtime linking when ON (defa
+ option(ZLIB_RUNTIME_LINKING         "Enable ZLib runtime linking when ON (default), disable when OFF." ON)
+ option(GLU_RUNTIME_LINKING          "Enable GLU runtime linking when ON (default), disable when OFF." ON)
+ option(SPIDERMONKEY_RUNTIME_LINKING "Enable SpiderMonkey runtime linking when ON (default), disable when OFF." ON)
++option(BUILD_CPACK                  "Enable to create CPACK" OFF)
+ 
+ option(COIN_VERBOSE "Add verbose debugging information during the configure process." OFF)
+ option(HAVE_MULTIPLE_VERSION "Forces versioned paths for includes and documentation when ON, usual behaviour otherwise." OFF)
+@@ -767,4 +768,6 @@ endif()
+ 
+ # ############################################################################
+ # New CPACK section, please see the README file inside cpack.d directory.
+-add_subdirectory(cpack.d)
++if (BUILD_CPACK)
++  add_subdirectory(cpack.d)
++endif (BUILD_CPACK)
