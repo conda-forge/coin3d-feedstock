@@ -14,7 +14,7 @@ source:
 
 
 build:
-    number: 1007
+    number: 1008
     skip: true  # [win and py<35]
 
 requirements:
