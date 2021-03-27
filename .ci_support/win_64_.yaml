@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2017
 expat:
-- '2.2'
+- '2.3'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
