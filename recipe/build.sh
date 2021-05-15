@@ -5,7 +5,7 @@ mkdir -p build
 cd build
 
 declare -a CMAKE_PLATFORM_FLAGS
-if [[ ${HOST} =~ *arm64-apple* ]]; then
+if [[ ${HOST} =~ arm64-apple* ]]; then
     CMAKE_PLATFORM_FLAGS+=(-DHAVE_HASH_QUOTING_EXITCODE=0)
     CMAKE_PLATFORM_FLAGS+=(-DHAVE_HASH_QUOTING_EXITCODE__TRYRUN_OUTPUT='')
 fi
