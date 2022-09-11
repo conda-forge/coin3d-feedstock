@@ -21,7 +21,7 @@ source:
         - superglue.patch
 
 build:
-    number: 1011
+    number: 1012
     skip: true  # [win and py<35]
 
 requirements:
