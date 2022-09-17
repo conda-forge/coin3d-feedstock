@@ -5,7 +5,7 @@ mkdir -p build
 cd build
 
 declare -a CMAKE_PLATFORM_FLAGS
-if [[${target_platform} != ${build_platform}]]; then
+if [[ ${target_platform} != ${build_platform} ]]; then
     CMAKE_PLATFORM_FLAGS+=(-DHAVE_HASH_QUOTING_EXITCODE=0)
     CMAKE_PLATFORM_FLAGS+=(-DHAVE_HASH_QUOTING_EXITCODE__TRYRUN_OUTPUT='')
 fi
