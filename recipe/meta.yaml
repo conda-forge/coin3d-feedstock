@@ -11,8 +11,6 @@ package:
 source:
   - url: https://github.com/coin3d/coin/archive/Coin-{{ version }}.tar.gz
     sha256: {{ sha256 }}
-    patches:
-      - 0001-cpack.d-is-now-optional.patch
 
   - url: https://github.com/coin3d/superglu/archive/superglu-{{ version_superglue }}.tar.gz
     sha256: {{ sha256_superglue }}
