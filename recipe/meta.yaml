@@ -1,6 +1,6 @@
 {% set name = "coin3d" %}
 {% set version = "4.0.1" %}
-{% set sha256 = "f408adcfb706e7c781db9c218ef9e8ba56d43995ccb61dffad5f6154c34f17d6" %}
+{% set sha256 = "4970051b6e0714f4207f64882dd1748e2c759ab8ebfa3e53d45703d6d3cc6512" %}
 {% set version_superglue = "1.3.0" %}
 {% set sha256_superglue = "f408adcfb706e7c781db9c218ef9e8ba56d43995ccb61dffad5f6154c34f17d6" %}
 
