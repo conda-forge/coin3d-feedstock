@@ -10,5 +10,7 @@ cxx_compiler:
 - vs2019
 expat:
 - '2'
+libboost_headers:
+- '1.84'
 target_platform:
 - win-64
