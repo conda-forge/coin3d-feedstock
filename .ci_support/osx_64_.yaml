@@ -21,7 +21,7 @@ cxx_compiler_version:
 expat:
 - '2'
 libboost_headers:
-- '1.84'
+- '1.86'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:

@@ -11,6 +11,6 @@ cxx_compiler:
 expat:
 - '2'
 libboost_headers:
-- '1.84'
+- '1.86'
 target_platform:
 - win-64
