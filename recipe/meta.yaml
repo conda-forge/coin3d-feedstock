@@ -29,7 +29,7 @@ requirements:
     - cmake
     - ninja
   host:
-    - libgl-devel
+    - libgl-devel     # [linux]
     - libboost-headers
     - libglu          # [linux]
     - xorg-libxt      # [linux]
