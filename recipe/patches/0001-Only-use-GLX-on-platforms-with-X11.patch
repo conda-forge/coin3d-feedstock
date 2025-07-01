@@ -1,0 +1,25 @@
+From ba3d28466652405d2b7e73a362ba48850055eb17 Mon Sep 17 00:00:00 2001
+From: Jacob Oursland <jacob.oursland@gmail.com>
+Date: Tue, 1 Jul 2025 16:52:10 -0700
+Subject: [PATCH] Only use GLX on platforms with X11.
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b9891b171..6dee632bc 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -703,7 +703,7 @@ elseif(APPLE)
+   endif()
+ endif()
+ 
+-if(COIN_BUILD_GLX)
++if(UNIX AND NOT APPLE AND COIN_BUILD_GLX)
+   if (NOT TARGET OpenGL::GLX)
+     if (OPENGL_glx_LIBRARY)
+       list(APPEND COIN_TARGET_LINK_LIBRARIES ${OPENGL_glx_LIBRARY})
+-- 
+2.50.0
+
