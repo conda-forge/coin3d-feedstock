@@ -204,4 +204,5 @@ Feedstock Maintainers
 =====================
 
 * [@looooo](https://github.com/looooo/)
+* [@oursland](https://github.com/oursland/)
 
