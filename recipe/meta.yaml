@@ -31,13 +31,14 @@ requirements:
     - cmake
     - ninja
   host:
+    - libboost-devel
     - libgl-devel     # [linux]
-    - libboost-headers
     - libglu          # [linux]
     - xorg-libxt      # [linux]
     - xorg-libxi      # [linux]
     - expat
   run:
+    - libboost
     - libglu          # [linux]
     - xorg-libxt      # [linux]
     - xorg-libxi      # [linux]
