@@ -9,8 +9,8 @@ package:
 source:
   - url: https://github.com/coin3d/coin/archive/refs/tags/v{{ version }}.tar.gz
     sha256: 4bd23e11f0934ce8311497770d2f9e89703e6876c232831f004fcdd496e5f5a6
-    patches:
-      - patches/0001-Only-use-GLX-on-platforms-with-X11.patch
+    # patches:
+    #   - patches/0001-Only-use-GLX-on-platforms-with-X11.patch
 
   - url: https://github.com/coin3d/superglu/archive/superglu-{{ superglue_version }}.tar.gz
     sha256: f408adcfb706e7c781db9c218ef9e8ba56d43995ccb61dffad5f6154c34f17d6
