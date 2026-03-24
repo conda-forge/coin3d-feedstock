@@ -37,7 +37,6 @@ requirements:
     - xorg-libxi      # [linux]
     - expat
   run:
-    - libboost
     - libglu          # [linux]
     - xorg-libxt      # [linux]
     - xorg-libxi      # [linux]
