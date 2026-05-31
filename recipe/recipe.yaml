@@ -23,7 +23,7 @@ source:
       - patches/0002-superglue.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run_exports:
